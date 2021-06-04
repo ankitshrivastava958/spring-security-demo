@@ -1,0 +1,9 @@
+spring:  jpa:
+    properties:      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true    database: POSTGRESQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/local_db?currentSchema=local
+    username: postgres
+    password: 12345       sql:    init:      platform: postgreslogging:  level:    org:      springframework:      security:        web:          FilterChainProxy: DEBUG
